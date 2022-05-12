@@ -6,7 +6,7 @@ import CustomButton from '../component/CustomButton';
 import Typography from '../component/typography';
 import COLORS from '../Constants/colors';
 import * as StaticString from '../StaticString.json';
-
+import i18n from '../component/i18n';
 interface Props {
   navigation: any
 }
