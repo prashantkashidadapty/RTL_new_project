@@ -15,7 +15,7 @@ const resources = {
       'column 2': 'العمود 2',
       'column 3': 'العمود 3',
       'Textinput test': 'اختبار الإدخال',
-      Testing: 'اختبارات',
+      'Testing': 'اختبارات',
       'Change language': 'تغيير اللغة',
       'Go to Inner screen ->': 'انتقل إلى الشاشة الداخلية ->',
       'Home': 'الصفحة الرئيسية',

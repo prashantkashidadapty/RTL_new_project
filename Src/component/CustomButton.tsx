@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
-
+import {moderateScale} from 'react-native-size-matters'; 
 type Props = {
   title: string;
   onPress: any;
@@ -26,10 +26,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
     textAlign: 'center',
+    justifyContent:'center'
   },
   buttontext: {
     fontFamily: 'times new roman',
-    fontSize: 20,
+    fontSize:  moderateScale(22, 0.3),
     textAlign: 'center',
     color: 'brown',
     padding: 5,
