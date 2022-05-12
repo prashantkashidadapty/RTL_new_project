@@ -11,5 +11,18 @@
   "Change language": "تغيير اللغة",
   "Go to Inner screen ->": "انتقل إلى الشاشة الداخلية ->",
   "Home": "الصفحة الرئيسية",
-  "H1: Hello world":"H1: أهلاً بالعالم"
+  "H1: Hello world":"H1: أهلاً بالعالم",
+  "H2: Hello world":"H2: أهلاً بالعالم",
+  "H3: Hello world":"H3: أهلاً بالعالم",
+  "H4: Hello world":"H4: أهلاً بالعالم",
+  "H5: Hello world":"H5: أهلاً بالعالم",
+  "H6: Hello world":"H6: أهلاً بالعالم",
+  "H7: Hello world":"H7: أهلاً بالعالم",
+  "Body: Hello world":"الجسم: أهلاً بالعالم",
+  "Title: Hello world":"العنوان: أهلاً بالعالم",
+  "Description: Hello world":"العنوان: أهلاً بالعالم",
+  "Bold: Description: Hello world":"العنوان: أهلاً بالعالم",
+    "Trademark: Description: Hello world":"العنوان: أهلاً بالعالم",
+    "MediumTopText: Description: Hello world":"العنوان: أهلاً بالعالم",
+    "Press Me":"اضغط علي"
 }
