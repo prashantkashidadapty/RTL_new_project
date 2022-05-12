@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,View, Text,TextInput,I18nManager,Button} from 'react-native';
+import { StyleSheet,View, Text,TextInput,I18nManager,Button, ScrollView} from 'react-native';
 import RNRestart from 'react-native-restart';
 import {useTranslation} from 'react-i18next';
 import CustomButton from '../component/CustomButton';
@@ -7,7 +7,7 @@ import Typography from '../component/typography';
 import COLORS from '../Constants/colors';
 import * as StaticString from '../StaticString.json';
 import i18n from '../component/i18n';
-
+import {Commonfontstyle} from '../Common/Commonfonts';
 const Home=() => {
  const {t, i18n} = useTranslation();
 
@@ -28,7 +28,7 @@ const Home=() => {
     });
   }
   return (
-    <>
+    <ScrollView>
       <View style={styles.wrapper}>
      
         <View style={styles.sectionWrapper}>
@@ -37,7 +37,8 @@ const Home=() => {
             {t('Some text goes here, some more text goes here')}
           </Text>
         </View>
-        <Typography children={t(StaticString.Title1)} variant={'h1'} color={COLORS.black} />
+       <View style={{alignItems:'center',margin:20,justifyContent:'space-between',}}>
+       <Typography children={t(StaticString.Title1)} variant={'h1'} color={COLORS.black} />
       <Typography children={t(StaticString.Title2)} variant={'h2'} color={COLORS.black} />
       <Typography children={t(StaticString.Title3)} variant={'h3'} color={COLORS.black} />
       <Typography children={t(StaticString.Title4)} variant={'h4'} color={COLORS.black} />
@@ -50,6 +51,9 @@ const Home=() => {
       <Typography children={t(StaticString.Title11)} variant={'bold'} color={COLORS.black} />
       <Typography children={t(StaticString.Title12)} variant={'trademark'}  color={COLORS.black} />
       <Typography children={t(StaticString.Title13)} variant={'mediumTopText'} color={COLORS.black} />
+
+       </View>
+       <Text style={[Commonfontstyle({}).RegularFont]}>Custom Styling </Text>
         <View style={styles.sectionWrapper}>
           <Text style={styles.heading}>{t('Row test')}</Text>
           <View style={styles.row}>
@@ -83,7 +87,7 @@ const Home=() => {
       />
     
       </View>
-    </>
+    </ScrollView>
   );
 };
 
