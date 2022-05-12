@@ -6,33 +6,6 @@ import * as ar from '../Local_language/ar.json'
 import * as en from '../Local_language/en.json'
 // the translations
 // (tip move them in a JSON file and import them)
-let translate : any;
-
-i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
-  .init({
-    compatibilityJSON: 'v3',
-    
-    resources: {
-       en
-    },
-    fallbackLng: I18nManager.isRTL ? 'ar' : 'en',
-
-    keySeparator: false, // we do not use keys in form messages.welcome
-
-    interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
-    react: {
-      bindI18n: 'languageChanged loaded'
-    }
-    
-  },
-  (err, t) => {
-    translate = t;
-  }
-  );
-
 const resources = {
   en: {
     translation: en
@@ -40,6 +13,32 @@ const resources = {
   ar: {
     translation: ar
   }
+};
+
+i18n
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .init({
+    resources,
+    compatibilityJSON: 'v3',
+    
+    fallbackLng: I18nManager.isRTL ? 'ar' : 'en',
+
+    keySeparator: false, // we do not use keys in form messages.welcome
+
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    },
+    // react: {
+    //   bindI18n: 'languageChanged loaded'
+    // }
+    
+  }
+  // (err, t) => {
+  //   translate = t;
+  // }
+  );
+
+
   // ar: {
   //   translation: { 
       // 'Hello world': ' مرحبا بالعالم',
@@ -56,8 +55,8 @@ const resources = {
       // 'Home': 'الصفحة الرئيسية',
     //},
   //},
-};
 
-export { translate as t };
+
+//export { translate as t };
 
 export default i18n;
