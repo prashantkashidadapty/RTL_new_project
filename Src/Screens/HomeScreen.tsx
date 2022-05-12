@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet,View, Text,TextInput,I18nManager,} from 'react-native';
+import {StyleSheet, View, Text, TextInput, I18nManager} from 'react-native';
 import RNRestart from 'react-native-restart';
 import {useTranslation} from 'react-i18next';
 import CustomButton from '../component/CustomButton';
 import Typography from '../component/typography';
-import i18n from '../component/i18n'
+import i18n from '../component/i18n';
 interface Props {
-  navigation: any
+  navigation: any;
 }
 const Home: React.FC = () => {
- const {t, i18n} = useTranslation();
+  const {t, i18n} = useTranslation();
 
   // useLayoutEffect(() => {
   //   navigation.setOptions({
@@ -17,16 +17,14 @@ const Home: React.FC = () => {
   //   });
   // });
 
-  const changelayout= () => {
+  const changelayout = () => {
     // I18nManager.forceRTL(true);
     // !I18nManager.isRTL && RNRestart.Restart()
-    i18n
-    .changeLanguage(i18n.language === 'ar' ? 'en' : 'ar')
-    .then(() => {
+    i18n.changeLanguage(i18n.language === 'ar' ? 'en' : 'ar').then(() => {
       I18nManager.forceRTL(i18n.language === 'ar');
       RNRestart.Restart();
     });
-  }
+  };
   return (
     <>
       <View style={styles.wrapper}>
@@ -56,13 +54,12 @@ const Home: React.FC = () => {
         <View style={styles.sectionWrapper}>
           <CustomButton
             title={t('Change language')}
-            onPress={() => { changelayout(); } }         />
+            onPress={() => {
+              changelayout();
+            }}
+          />
         </View>
-        <title
-        style={{textAlign:'center'}}
-        children={t('Welcome to React')}
-      />
-    
+        <title style={{textAlign: 'center'}} children={t('Welcome to React')} />
       </View>
     </>
   );

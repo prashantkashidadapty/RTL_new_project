@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignSelf: 'center',
     alignItems: 'center',
-    borderRadius: 40,
+    borderRadius: 20,
     textAlign: 'center',
   },
   buttontext: {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ADA-416\\Desktop\\React Native Arebic\\RTL_Components\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
+            "outputFile": "C:\\Users\\ADA-416\\Desktop\\React Native Arebic\\RTL_new_project\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADA-416\\.gradle\\caches\\transforms-3\\92f097da2c13c17a6cb693c16e868191\\transformed\\core-1.5.0\\res\\values-mr\\values-mr.xml",
