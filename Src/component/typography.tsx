@@ -1,17 +1,21 @@
 import React from 'react';
-import {StyleProp, StyleSheet, Text, TextProps, TextStyle} from 'react-native';
-
+import {StyleProp, StyleSheet, Text, TextProps, TextStyle,I18nManager} from 'react-native';
+import {moderateScale} from 'react-native-size-matters';
+import {Util} from '../Utils/utils';
+import COLORS from '../Constants/colors';
 
 interface OwnProps {
+  variant?: keyof TypographyStyles;
   color?: string;
   style?: StyleProp<TextStyle>;
+
 }
 
 type Props = OwnProps & TextProps;
 
-const Typography: React.FC<Props> = ({ color = 'black', style, children, ...otheProps}) => {
+const Typography: React.FC<Props> = ({variant = 'body', color = COLORS.black,style, children, ...otheProps}) => {
   return (
-    <Text style={[{color}, style]} {...otheProps}>
+    <Text style={[styles[variant], {color}, style,]} {...otheProps}>
       {children}
     </Text>
   );
@@ -42,75 +46,93 @@ interface TypographyStyles {
 
 const styles = StyleSheet.create({
   h1: {
-    fontSize: 24,
-    fontFamily: 'bold',
+    fontSize: moderateScale(24, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   h2: {
-    fontSize: 22,
-    fontFamily: 'bold',
+    fontSize: moderateScale(22, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   h3: {
-    fontSize:20,
-    fontFamily: 'bold',
+    fontSize: moderateScale(20, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   h4: {
-    fontSize:18,
-    fontFamily: 'bold',
+    fontSize: moderateScale(18, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   h5: {
-    fontSize: 16,
-    fontFamily: 'bold',
+    fontSize: moderateScale(16, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   h6: {
-    fontSize: 14,
-    fontFamily: 'bold',
+    fontSize: moderateScale(14, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   h7: {
-    fontSize: 12,
-    fontFamily: 'bold',
+    fontSize: moderateScale(10, 0.3),
+    fontFamily: Util.FontFamily.FuturaDemi,
+    textAlign: 'left',
   },
   body: {
-    fontSize:23 ,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(16, 0.3),
+    fontFamily: Util.FontFamily.FuturaBook,
+    textAlign: 'left',
   },
   body1: {
-    fontSize: 40,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(12, 0.3),
+    fontFamily: Util.FontFamily.FuturaBook,
+    textAlign: 'left',
   },
   title: {
-    fontSize: 14,
-    fontFamily: 'bold',
+    fontSize: moderateScale(14, 0.3),
+    fontFamily: Util.FontFamily.FuturaMedium,
+    textAlign: 'left',
   },
   title1: {
-    fontSize: 16,
-    fontFamily:'bold',
+    fontSize: moderateScale(16, 0.3),
+    fontFamily: Util.FontFamily.FuturaMedium,
+    textAlign: 'left',
   },
   description: {
-    fontSize: 14,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(14, 0.3),
+    fontFamily: Util.FontFamily.FuturaBook,
+    textAlign: 'left',
   },
   mediumTopText: {
-    fontSize: 14,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(12.5, 0.3),
+    fontFamily: Util.FontFamily.FuturaBook,
+    textAlign: 'left',
   },
   descriptionTiny: {
-    fontSize: 12,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(10, 0.3),
+    fontFamily: Util.FontFamily.FuturaBook,
+    textAlign: 'left',
   },
   lightDescription: {
-    fontSize: 14,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(14, 0.3),
+    fontFamily: Util.FontFamily.FuturaLight,
+    textAlign: 'left',
   },
   lightDescriptionNormal: {
-    fontSize: 14,
-    fontFamily: 'times new roman',
+    fontSize: moderateScale(16, 0.3),
+    fontFamily: Util.FontFamily.FuturaLight,
+    textAlign: 'left',
   },
   bold: {
-    fontSize: 20,
-    fontFamily: 'bold',
+    fontSize: moderateScale(20, 0.3),
+    fontFamily: Util.FontFamily.FuturaBold,
+    textAlign: 'left',
   },
   trademark: {
-    fontSize: 14,
-    fontFamily:'bold'
+    fontSize: moderateScale(8, 0.3),
+    fontFamily: Util.FontFamily.FuturaMedium,
+    textAlign: 'left',
   },
 });

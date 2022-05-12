@@ -1,15 +1,17 @@
 import React from 'react';
-import {StyleSheet, View, Text, TextInput, I18nManager} from 'react-native';
+import { StyleSheet,View, Text,TextInput,I18nManager,} from 'react-native';
 import RNRestart from 'react-native-restart';
 import {useTranslation} from 'react-i18next';
 import CustomButton from '../component/CustomButton';
 import Typography from '../component/typography';
-import i18n from '../component/i18n';
+import COLORS from '../Constants/colors';
+import * as StaticString from '../StaticString.json';
+
 interface Props {
-  navigation: any;
+  navigation: any
 }
 const Home: React.FC = () => {
-  const {t, i18n} = useTranslation();
+ const {t, i18n} = useTranslation();
 
   // useLayoutEffect(() => {
   //   navigation.setOptions({
@@ -17,23 +19,36 @@ const Home: React.FC = () => {
   //   });
   // });
 
-  const changelayout = () => {
+  const changelayout= () => {
     // I18nManager.forceRTL(true);
     // !I18nManager.isRTL && RNRestart.Restart()
-    i18n.changeLanguage(i18n.language === 'ar' ? 'en' : 'ar').then(() => {
+    i18n
+    .changeLanguage(i18n.language === 'ar' ? 'en' : 'ar')
+    .then(() => {
       I18nManager.forceRTL(i18n.language === 'ar');
       RNRestart.Restart();
     });
-  };
+  }
   return (
     <>
       <View style={styles.wrapper}>
+     
         <View style={styles.sectionWrapper}>
           <Text style={styles.heading}>{t('Hello world')}</Text>
           <Text style={styles.regularText}>
             {t('Some text goes here, some more text goes here')}
           </Text>
         </View>
+        <Typography children={t(StaticString.Title1)} variant={'h1'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title2)} variant={'h2'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title3)} variant={'h3'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title4)} variant={'h4'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title5)} variant={'h5'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title6)} variant={'h6'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title7)} variant={'h7'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title8)} variant={'body'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title9)} variant={'title'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title10)} variant={'description'} color={COLORS.black} />
         <View style={styles.sectionWrapper}>
           <Text style={styles.heading}>{t('Row test')}</Text>
           <View style={styles.row}>
@@ -53,13 +68,19 @@ const Home: React.FC = () => {
         </View> */}
         <View style={styles.sectionWrapper}>
           <CustomButton
-            title={t('Change language')}
-            onPress={() => {
-              changelayout();
-            }}
-          />
+            title={t('Press Me')}
+            onPress={() => {i18n
+              .changeLanguage(i18n.language === 'ar' ? 'en' : 'ar')
+              .then(() => {
+                I18nManager.forceRTL(i18n.language === 'ar');
+                RNRestart.Restart();
+              });} }         />
         </View>
-        <title style={{textAlign: 'center'}} children={t('Welcome to React')} />
+        <Typography
+        style={{textAlign:'center'}}
+        children={t('Welcome to React')}
+      />
+    
       </View>
     </>
   );
