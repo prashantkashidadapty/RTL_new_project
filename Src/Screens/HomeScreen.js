@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,View, Text,TextInput,I18nManager,Button} from 'react-native-paper';
+import { StyleSheet,View, Text,TextInput,I18nManager,Button} from 'react-native';
 import RNRestart from 'react-native-restart';
 import {useTranslation} from 'react-i18next';
 import CustomButton from '../component/CustomButton';
