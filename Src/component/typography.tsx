@@ -1,14 +1,13 @@
 import React from 'react';
 import {StyleProp, StyleSheet, Text, TextProps, TextStyle,I18nManager} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Util} from '../Utils/utils';
+import {Util} from '../Utils/CommonFontfamilies';
 import COLORS from '../Constants/colors';
 
 interface OwnProps {
   variant?: keyof TypographyStyles;
   color?: string;
   style?: StyleProp<TextStyle>;
-
 }
 
 type Props = OwnProps & TextProps;
@@ -32,13 +31,8 @@ interface TypographyStyles {
   h6?: StyleProp<TextStyle>;
   h7?: StyleProp<TextStyle>;
   body?: StyleProp<TextStyle>;
-  body1?: StyleProp<TextStyle>;
   title?: StyleProp<TextStyle>;
-  title1?: StyleProp<TextStyle>;
   description?: StyleProp<TextStyle>;
-  descriptionTiny?: StyleProp<TextStyle>;
-  lightDescription?: StyleProp<TextStyle>;
-  lightDescriptionNormal?: StyleProp<TextStyle>;
   bold?: StyleProp<TextStyle>;
   trademark?: StyleProp<TextStyle>;
   mediumTopText?: StyleProp<TextStyle>;
@@ -47,92 +41,68 @@ interface TypographyStyles {
 const styles = StyleSheet.create({
   h1: {
     fontSize: moderateScale(24, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   h2: {
     fontSize: moderateScale(22, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   h3: {
     fontSize: moderateScale(20, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   h4: {
     fontSize: moderateScale(18, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   h5: {
     fontSize: moderateScale(16, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   h6: {
     fontSize: moderateScale(14, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   h7: {
     fontSize: moderateScale(10, 0.3),
-    fontFamily: Util.FontFamily.FuturaDemi,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   body: {
     fontSize: moderateScale(16, 0.3),
-    fontFamily: Util.FontFamily.FuturaBook,
-    textAlign: 'left',
-  },
-  body1: {
-    fontSize: moderateScale(12, 0.3),
-    fontFamily: Util.FontFamily.FuturaBook,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_REGULAR,
     textAlign: 'left',
   },
   title: {
     fontSize: moderateScale(14, 0.3),
-    fontFamily: Util.FontFamily.FuturaMedium,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_TITLE,
     textAlign: 'left',
   },
-  title1: {
-    fontSize: moderateScale(16, 0.3),
-    fontFamily: Util.FontFamily.FuturaMedium,
-    textAlign: 'left',
-  },
+
   description: {
     fontSize: moderateScale(14, 0.3),
-    fontFamily: Util.FontFamily.FuturaBook,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_DESCRIPTION,
     textAlign: 'left',
   },
   mediumTopText: {
     fontSize: moderateScale(12.5, 0.3),
-    fontFamily: Util.FontFamily.FuturaBook,
-    textAlign: 'left',
-  },
-  descriptionTiny: {
-    fontSize: moderateScale(10, 0.3),
-    fontFamily: Util.FontFamily.FuturaBook,
-    textAlign: 'left',
-  },
-  lightDescription: {
-    fontSize: moderateScale(14, 0.3),
-    fontFamily: Util.FontFamily.FuturaLight,
-    textAlign: 'left',
-  },
-  lightDescriptionNormal: {
-    fontSize: moderateScale(16, 0.3),
-    fontFamily: Util.FontFamily.FuturaLight,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_SEMI,
     textAlign: 'left',
   },
   bold: {
     fontSize: moderateScale(20, 0.3),
-    fontFamily: Util.FontFamily.FuturaBold,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
     textAlign: 'left',
   },
   trademark: {
     fontSize: moderateScale(8, 0.3),
-    fontFamily: Util.FontFamily.FuturaMedium,
+    fontFamily: Util.FontFamily.PRIMARY_FONT_TRADEMARK,
     textAlign: 'left',
   },
 });

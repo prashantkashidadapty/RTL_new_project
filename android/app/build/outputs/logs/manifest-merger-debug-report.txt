@@ -8,10 +8,11 @@ MERGED from C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\android
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\ADA-416\.gradle\caches\transforms-3\85fdd9af1f70f27ec9080a3596d5a5c1\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\ADA-416\.gradle\caches\transforms-3\ee6279daff0e353913f650ca1c1098c1\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\ADA-416\.gradle\caches\transforms-3\2cade2aff8fbe74525993e45cf63412b\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-localize] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-localize\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-restart] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-restart\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.react:react-native:0.68.1] C:\Users\ADA-416\.gradle\caches\transforms-3\ed37863991b2f59d2034e04549f58bd9\transformed\jetified-react-native-0.68.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\ADA-416\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ADA-416\.gradle\caches\transforms-3\eb5de0732845d4227271d838de9753b6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\ADA-416\.gradle\caches\transforms-3\f847d2d73496ec3d012a8ae4db387b4f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\ADA-416\.gradle\caches\transforms-3\b1e65191b108d1b6411632de1d8ff223\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:2:1-9:12
@@ -95,8 +96,8 @@ application
 ADDED from C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from [com.facebook.react:react-native:0.68.1] C:\Users\ADA-416\.gradle\caches\transforms-3\ed37863991b2f59d2034e04549f58bd9\transformed\jetified-react-native-0.68.1\AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.react:react-native:0.68.1] C:\Users\ADA-416\.gradle\caches\transforms-3\ed37863991b2f59d2034e04549f58bd9\transformed\jetified-react-native-0.68.1\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\ADA-416\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\ADA-416\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] C:\Users\ADA-416\.gradle\caches\transforms-3\7924b8fa1a4cc2a22fb121b0c1d19ab1\transformed\jetified-soloader-0.10.3\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] C:\Users\ADA-416\.gradle\caches\transforms-3\7924b8fa1a4cc2a22fb121b0c1d19ab1\transformed\jetified-soloader-0.10.3\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\ADA-416\.gradle\caches\transforms-3\10d56dc05e97ac2f55b989317a070bfc\transformed\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -165,14 +166,16 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\ADA-4
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\ADA-416\.gradle\caches\transforms-3\ee6279daff0e353913f650ca1c1098c1\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\ADA-416\.gradle\caches\transforms-3\2cade2aff8fbe74525993e45cf63412b\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\ADA-416\.gradle\caches\transforms-3\2cade2aff8fbe74525993e45cf63412b\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-localize] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-localize\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-localize] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-localize\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-restart] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-restart\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-restart] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-restart\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\ADA-416\Desktop\React Native Arebic\RTL_new_project\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.react:react-native:0.68.1] C:\Users\ADA-416\.gradle\caches\transforms-3\ed37863991b2f59d2034e04549f58bd9\transformed\jetified-react-native-0.68.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.react:react-native:0.68.1] C:\Users\ADA-416\.gradle\caches\transforms-3\ed37863991b2f59d2034e04549f58bd9\transformed\jetified-react-native-0.68.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\ADA-416\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\ADA-416\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ADA-416\.gradle\caches\transforms-3\eb5de0732845d4227271d838de9753b6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ADA-416\.gradle\caches\transforms-3\eb5de0732845d4227271d838de9753b6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\ADA-416\.gradle\caches\transforms-3\f847d2d73496ec3d012a8ae4db387b4f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41

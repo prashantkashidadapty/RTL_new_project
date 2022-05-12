@@ -1,10 +1,14 @@
+
 {
-    "login": {
-      "welcome": "{{name}}, ברוך הבא לאפליקציה המתורגמת!",
-      "login_button": "התחבר",
-      "signup_button": "הרשם"
-    },
-    "user_profile": {
-      "title": "הפרופיל שלך"  
-    }
-  }
+  "Hello world": "مرحبا بالعالم",
+  "Some text goes here, some more text goes here":"بعض النص هنا ، المزيد من النص هنا",
+  "Row test": "اختبار الصف",
+  "column 1": "العمود 1",
+  "column 2": "العمود 2",
+  "column 3": "العمود 3",
+  "Textinput test": "اختبار الإدخال",
+  "Testing": "اختبارات",
+  "Change language": "تغيير اللغة",
+  "Go to Inner screen ->": "انتقل إلى الشاشة الداخلية ->",
+  "Home": "الصفحة الرئيسية"
+}

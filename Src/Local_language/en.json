@@ -1,10 +1,13 @@
 {
-    "login": {
-      "welcome": "Welcome {{name}} to our localized app!",
-      "login_button": "Login",
-      "signup_button": "Sign Up"
-    },
-    "user_profile": {
-      "title": "Your Profile"  
-    }
-  }
+  "Hello world":  "Hello world",
+  "Some text goes here, some more text goes here":"Some text goes here, some more text goes here",
+  "Row test":"Row test",
+  "column 1": "column 1",
+  "column 2": "column 2",
+  "column 3": "column 3",
+  "Textinput test": "Textinput test",
+  "Testing": "Testing",
+  "Change language": "Change language",
+  "Go to Inner screen ->":  "Go to Inner screen ->",
+  "Home": "Home"
+}

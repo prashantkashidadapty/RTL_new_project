@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,View, Text,TextInput,I18nManager,} from 'react-native';
+import { StyleSheet,View, Text,TextInput,I18nManager,Button} from 'react-native';
 import RNRestart from 'react-native-restart';
 import {useTranslation} from 'react-i18next';
 import CustomButton from '../component/CustomButton';
@@ -19,9 +19,9 @@ const Home: React.FC = () => {
   //   });
   // });
 
-  const changelayout= () => {
+  const changelayout = () => {
     // I18nManager.forceRTL(true);
-    // !I18nManager.isRTL && RNRestart.Restart()
+    // !I18nManager.isRTL && RNRestart.Restart();
     i18n
     .changeLanguage(i18n.language === 'ar' ? 'en' : 'ar')
     .then(() => {
@@ -48,7 +48,10 @@ const Home: React.FC = () => {
       <Typography children={t(StaticString.Title7)} variant={'h7'} color={COLORS.black} />
       <Typography children={t(StaticString.Title8)} variant={'body'} color={COLORS.black} />
       <Typography children={t(StaticString.Title9)} variant={'title'} color={COLORS.black} />
-      <Typography children={t(StaticString.Title10)} variant={'description'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title10)} variant={'description'}color={COLORS.black} />
+      <Typography children={t(StaticString.Title11)} variant={'bold'} color={COLORS.black} />
+      <Typography children={t(StaticString.Title12)} variant={'trademark'}  color={COLORS.black} />
+      <Typography children={t(StaticString.Title13)} variant={'mediumTopText'} color={COLORS.black} />
         <View style={styles.sectionWrapper}>
           <Text style={styles.heading}>{t('Row test')}</Text>
           <View style={styles.row}>
@@ -69,12 +72,12 @@ const Home: React.FC = () => {
         <View style={styles.sectionWrapper}>
           <CustomButton
             title={t('Press Me')}
-            onPress={() => {i18n
+            onPress={() => i18n
               .changeLanguage(i18n.language === 'ar' ? 'en' : 'ar')
               .then(() => {
                 I18nManager.forceRTL(i18n.language === 'ar');
                 RNRestart.Restart();
-              });} }         />
+              }) }         />
         </View>
         <Typography
         style={{textAlign:'center'}}
