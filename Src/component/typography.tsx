@@ -8,13 +8,14 @@ interface OwnProps {
   variant?: keyof TypographyStyles;
   color?: string;
   style?: StyleProp<TextStyle>;
+  textAlign: string;
 }
 
 type Props = OwnProps & TextProps;
 
-const Typography: React.FC<Props> = ({variant = 'body', color = COLORS.black,style, children, ...otheProps}) => {
+const Typography: React.FC<Props> = ({variant = 'body', color = COLORS.black,style, textAlign='left' ,children, ...otheProps}) => {
   return (
-    <Text style={[styles[variant], {color}, style,]} {...otheProps}>
+    <Text style={[styles[variant], {color},{textAlign}, style,]} {...otheProps}>
       {children}
     </Text>
   );
@@ -42,67 +43,54 @@ const styles = StyleSheet.create({
   h1: {
     fontSize: moderateScale(24, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   h2: {
     fontSize: moderateScale(22, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   h3: {
     fontSize: moderateScale(20, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   h4: {
     fontSize: moderateScale(18, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   h5: {
     fontSize: moderateScale(16, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   h6: {
     fontSize: moderateScale(14, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   h7: {
     fontSize: moderateScale(10, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   body: {
     fontSize: moderateScale(16, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_REGULAR,
-    textAlign: 'left',
   },
   title: {
     fontSize: moderateScale(14, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_TITLE,
-    textAlign: 'left',
   },
 
   description: {
     fontSize: moderateScale(14, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_DESCRIPTION,
-    textAlign: 'left',
   },
   mediumTopText: {
     fontSize: moderateScale(12.5, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_SEMI,
-    textAlign: 'left',
   },
   bold: {
     fontSize: moderateScale(20, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_BOLD,
-    textAlign: 'left',
   },
   trademark: {
     fontSize: moderateScale(8, 0.3),
     fontFamily: Util.FontFamily.PRIMARY_FONT_TRADEMARK,
-    textAlign: 'left',
   },
 });

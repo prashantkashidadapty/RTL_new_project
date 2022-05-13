@@ -37,7 +37,7 @@ const Home=() => {
             {t('Some text goes here, some more text goes here')}
           </Text>
         </View>
-       <View style={{alignItems:'center',margin:20,justifyContent:'space-between',}}>
+       <View>
        <Typography children={t(StaticString.Title1)} variant={'h1'} color={COLORS.black} />
       <Typography children={t(StaticString.Title2)} variant={'h2'} color={COLORS.black} />
       <Typography children={t(StaticString.Title3)} variant={'h3'} color={COLORS.black} />
